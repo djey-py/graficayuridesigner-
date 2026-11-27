@@ -6,9 +6,9 @@
 
 Projecto Vercel: `grafica-yuri-designer`.
 
-Deployment de produção confirmado no estado **READY / PROMOTED**: `dpl_7MWEETSHD4pYGwaAzVQa39xHaYy1`, a partir do commit `ddc7691792e446418ae4b8199bf1c710e892d57b`.
+Deployment de produção confirmado no estado **READY / PROMOTED**: `dpl_2CKw6bWwznLpVMZciYqQf3Jn6wJ2`, a partir do commit `6cf21bd3b02c38ffb2deceaac7032c5797280e54`.
 
-A página pública foi aberta através da ferramenta de consulta web: devolveu o título, o catálogo, os seis formatos com preços correctos, os kits, a personalização e os dois contactos. A última actualização acrescenta a URL canónica, a imagem Open Graph absoluta e o sitemap; será republicada no mesmo endereço.
+A página pública foi aberta através da ferramenta de consulta web: devolveu o título, o catálogo, os seis formatos com preços correctos, os kits, a personalização e os dois contactos. A última actualização, com URL canónica, imagem Open Graph absoluta e sitemap, foi republicada no mesmo endereço e confirmada no estado READY / PROMOTED. Este registo posterior altera apenas a documentação, não o código da vitrine.
 
 ## GitHub
 
