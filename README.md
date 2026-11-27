@@ -1,5 +1,7 @@
 # Gráfica Yuri-Designer
 
+**Demo online:** https://grafica-yuri-designer.vercel.app/
+
 Vitrine comercial responsiva orientada para encomendas pelo WhatsApp. Desenvolvida em **React + Vite**, JavaScript/JSX, CSS3, Lucide React e Framer Motion.
 
 ## Executar localmente
@@ -7,6 +9,8 @@ Vitrine comercial responsiva orientada para encomendas pelo WhatsApp. Desenvolvi
 Requisitos: Node.js 22 LTS e npm. Não são necessárias variáveis de ambiente nem backend.
 
 ```bash
+git clone --branch arena/cc6073a3-graficayuridesigner https://github.com/djey-py/graficayuridesigner-.git
+cd graficayuridesigner-
 npm ci
 npm run dev
 ```

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://grafica-yuri-designer.vercel.app/sitemap.xml

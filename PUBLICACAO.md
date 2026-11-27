@@ -1,21 +1,55 @@
 # Estado da publicação
 
-## Validação local
+## Demo online
 
-- Build de produção concluído (`npm run build`).
-- 8 testes Playwright aprovados: desktop e mobile.
-- Formatos A5, A4, A3, A2, A1 e A0 e respectivos preços verificados.
-- Destinos e mensagens dos dois contactos WhatsApp verificados, sem envio real de mensagens.
-- Imagens, filtros, galeria, menu mobile, âncoras e ausência de overflow verificados.
-- `npm audit`: zero vulnerabilidades na validação final.
+**https://grafica-yuri-designer.vercel.app/**
+
+Projecto Vercel: `grafica-yuri-designer`.
+
+Deployment de produção confirmado no estado **READY / PROMOTED**: `dpl_7MWEETSHD4pYGwaAzVQa39xHaYy1`, a partir do commit `ddc7691792e446418ae4b8199bf1c710e892d57b`.
+
+A página pública foi aberta através da ferramenta de consulta web: devolveu o título, o catálogo, os seis formatos com preços correctos, os kits, a personalização e os dois contactos. A última actualização acrescenta a URL canónica, a imagem Open Graph absoluta e o sitemap; será republicada no mesmo endereço.
 
 ## GitHub
 
-A tentativa de criar `djey-py/grafica-yuri-designer` foi recusada pela integração:
-`GraphQL: Resource not accessible by integration (createRepository)`.
+Código-fonte enviado com sucesso:
 
-O trabalho está na branch da sessão `arena/cc6073a3-graficayuridesigner`, no repositório existente `djey-py/graficayuridesigner-`. O resultado do envio e da publicação será registado após a execução.
+**https://github.com/djey-py/graficayuridesigner-/tree/arena/cc6073a3-graficayuridesigner**
 
-## Vercel
+A tentativa de criar **um novo** repositório `djey-py/grafica-yuri-designer` foi recusada:
 
-Publicação ainda em curso. Não considerar o website online até existir confirmação do deployment.
+```text
+GraphQL: Resource not accessible by integration (createRepository)
+```
+
+Por isso, foi utilizado o repositório já ligado à sessão. **Não foi criado o novo repositório pedido.** A integração GitHub precisa de permissão para criar repositórios para concluir essa etapa exacta. Nenhuma outra branch foi criada ou modificada.
+
+## Testes executados
+
+- Build local de produção concluído: `npm run build`.
+- **8/8 testes** aprovados no servidor de desenvolvimento.
+- **8/8 testes** aprovados no build de produção servido localmente.
+- Destinos e texto dos dois contactos WhatsApp, sem envio real de mensagens.
+- Os seis preços exactos, actualização dinâmica e mensagens com o formato escolhido.
+- Todos os produtos, oferta de cartões, kits e detalhes adicionais.
+- Filtros, galeria, navegação, menu mobile e imagens sem falhas.
+- Ausência de scroll horizontal em larguras entre 320 e 1920 px.
+- Nenhuma excepção JavaScript nos cenários testados.
+- `npm audit`: **zero vulnerabilidades**.
+
+## Limite da verificação online
+
+O build e a promoção em produção foram confirmados pela integração Vercel, e a página pública foi lida com sucesso pela ferramenta web. O browser Playwright do ambiente não consegue aceder directamente a domínios Vercel (`net::ERR_CONNECTION_CLOSED`, restrição de rede). Por isso **não foi executada a suite interactiva contra o domínio público**. Os testes desktop e mobile foram feitos contra o mesmo build de produção local.
+
+Não se testou o envio/recepção real de mensagens WhatsApp, nem aparelhos Android/iPhone físicos. A validação dos links não pressupõe confirmação de que cada número tem uma conta WhatsApp activa.
+
+## Configuração
+
+- Framework: Vite / React.
+- Instalação: `npm ci`.
+- Build: `npm run build`.
+- Pasta publicada: `dist`.
+- Variáveis de ambiente: nenhuma necessária.
+- Fonte do deployment: branch da sessão `arena/cc6073a3-graficayuridesigner`.
+- A branch de produção padrão do projecto permanece `main`; esta publicação foi accionada explicitamente da branch da sessão, sem modificar `main`.
+- Imagens locais WebP e fontes locais; sem dependência de um CDN de fotografias ou tipografia.
